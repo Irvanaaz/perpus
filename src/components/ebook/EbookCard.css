@@ -1,0 +1,46 @@
+.ebook-card {
+  width: 200px;
+  border: 1px solid var(--border-color); /* pakai variabel */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow); /* pakai variabel */
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg-color); /* pakai variabel */
+}
+
+.ebook-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ebook-card-cover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #f4f4f4;
+}
+
+.ebook-card-body {
+  padding: 12px;
+}
+
+.ebook-card-title {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ebook-card-author {
+  font-size: 0.85rem;
+  color: var(--text-secondary-color); /* pakai variabel */
+  margin: 0;
+}
+
+.ebook-card-link {
+  text-decoration: none;
+  color: inherit; /* Mewarisi warna teks dari parent */
+}

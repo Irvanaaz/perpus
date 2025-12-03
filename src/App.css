@@ -1,0 +1,38 @@
+/* src/App.css */
+
+/* 1. Definisikan variabel warna untuk Mode Terang (Light Mode) */
+:root {
+  --bg-color: #ffffff;
+  --bg-secondary-color: #f8f9fa;
+  --text-color: #212529;
+  --text-secondary-color: #6c757d;
+  --border-color: #dee2e6;
+  --header-bg-color: #333;
+  --header-text-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --button-primary-bg: #007bff;
+}
+
+/* 2. Definisikan ulang variabel yang sama untuk Mode Gelap (Dark Mode) */
+body.dark-mode {
+  --bg-color: #121212;
+  --bg-secondary-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --text-secondary-color: #a0a0a0;
+  --border-color: #444444;
+  --header-bg-color: #1e1e1e;
+  --header-text-color: #e0e0e0;
+  --card-bg-color: #2a2a2a;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --button-primary-bg: #0d6efd;
+}
+
+/* 3. Terapkan gaya dasar menggunakan variabel */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Kita perlu update beberapa komponen agar menggunakan variabel ini */

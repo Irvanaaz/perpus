@@ -1,0 +1,60 @@
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.login-form {
+  background: var(--card-bg-color); /* pakai variabel */
+  box-shadow: var(--card-shadow); /* pakai variabel */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  color: var(--text-color); /* pakai variabel */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-secondary-color); /* pakai variabel */
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color); /* pakai variabel */
+  background-color: var(--bg-color); /* pakai variabel */
+  color: var(--text-color); /* pakai variabel */
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.redirect-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.redirect-link a {
+  color: var(
+    --button-primary-bg
+  ); /* <-- Gunakan variabel untuk warna utama tombol */
+  text-decoration: none;
+  font-weight: bold; /* Tambahkan ini agar lebih terlihat */
+}
+
+.redirect-link a:hover {
+  text-decoration: underline;
+}

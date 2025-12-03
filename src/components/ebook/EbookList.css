@@ -1,0 +1,9 @@
+.ebook-list {
+  display: grid;
+  /* Membuat kolom responsif */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
